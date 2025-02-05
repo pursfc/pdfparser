@@ -668,7 +668,7 @@ class PDFObject
         $result = $this->getTextArray($page);
         $this->addPositionWhitespace = false;
 
-        return implode('', $result).' ';
+        return implode('|',$result).' ';
     }
 
     /**
